@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PinkBike Scraper</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <!--  HEADER WITH LOGO AND LINKS  -->
+  <header class="header-container clearfix">
+    <a href="/" class="header-logo-link"><img src="./assets/img/pinkbikeScraperLogo.jpeg" alt="Pinkbike Scraper Logo" class="header-logo"></a>
+    <a href="/" class="link">Home</a>
+    <a href="/saved" class="link">Saved Articles</a>
+    <div class="header-buttons-right">
+      <button class="scrape-button button">Scrape!</button>  
+      <button class="clear-button button">Clear Articles</button>
+    </div>
+  </header>
+
+  <!--  JUMBOTRON IMAGE  -->
+  <div class="jumbotron-container background-image">
+    <div class="overlay"></div>
+    <div class="jumbotron-text">
+      <h1 class="jumbotron-header">Mongo Scraper</h1>
+      <h5 class="jumbotron-caption">Pinkbike Edition</h5>
+    </div>
+  </div>
+
+  <!--  ARTICLE DISPLAY  -->
+  <div class="articles">
+    <div class="article-container hidden">
+      <div class="content-title">
+        <h1>Sorry, Looks like there are no articles here!</h1> 
+      </div>
+      <div class="content-body">
+        <h2>Perhaps these options would appeal to you?</h2> 
+        <div class="content-buttons">
+          <button href="#" class="no-content-button">Scrape New Articles</button>
+          <button href="#" class="no-content-button">View Saved Articles</button>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <!--  FOOTER  -->
+  <div class="footer">
+    <p class="copyright">&copy; Copyright 2019</p> 
+  </div>
+  
+
+  <script src="./assets/js/index.js"></script>
+</body>
+</html>
