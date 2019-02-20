@@ -1,0 +1,28 @@
+{
+  "name": "pinkbikescraper",
+  "version": "1.0.0",
+  "description": "UNCC Full Stack Coding Bootcamp Week 18 Homework",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CACOOK88/pinkBikeScraper.git"
+  },
+  "author": "Chad Cook",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CACOOK88/pinkBikeScraper/issues"
+  },
+  "homepage": "https://github.com/CACOOK88/pinkBikeScraper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.4.11",
+    "nodemon": "^1.18.10"
+  }
+}

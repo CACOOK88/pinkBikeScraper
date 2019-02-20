@@ -5,6 +5,10 @@ body {
   font-family: 'Caveat Brush', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.page-container {
+  min-height: calc( 100vh - 35px );
+}
+
 /*  HEADER NAV BAR  */
 .header-container {
   background: #591418;
@@ -108,10 +112,11 @@ button {
 }
 
 /* ARTICLES CONTAINER */
+
 .article-container {
   width: 96%;
   margin: 0 auto;
-  margin-bottom: 75px;
+  margin-bottom: 25px;
 }
 
 .content-title {
@@ -121,7 +126,17 @@ button {
   padding-bottom: 5px;
 }
 
-.content-title>h1 {
+.content-title>h1>a {
+  text-decoration: none;
+  color: #f3f3f3;
+  transition: 0.3s
+}
+
+.content-title>h1>a:hover {
+  color: rgba(67, 70, 75, 0.7);
+}
+
+.content-title h1 {
   margin-bottom: 0;
 }
 
@@ -131,18 +146,35 @@ button {
   border-radius: 0 0 5px 5px;
   margin-bottom: 0;
   text-align: center;
+  display: flex;
 }
 
-.content-body>h2 {
+.content-summary {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-image {
+  height: 150px;
+  width: auto;
+  float: left;
+
+}
+
+.content-body>div>p {
   color: rgba(0, 0, 0, 0.847);
+  font-size: 1.5rem;
 }
 
-.no-content-button {
+.no-content-button,
+.save-button,
+.delete-button,
+.note-button {
   width: 194px;
   margin: 5px auto;
   display: block;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.25rem;
   border: 1px #591418 solid;
   border-radius: 5px;
   cursor: pointer;
@@ -175,3 +207,10 @@ button {
   color: #CCC;
 }
 
+.footer-spacer {
+  max-height: calc(100vh - 758px);
+}
+
+.hidden {
+  display: none;
+}
